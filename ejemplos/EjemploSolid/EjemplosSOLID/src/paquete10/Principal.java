@@ -23,7 +23,17 @@ public class Principal {
         GeneradorPeliculas gp2 = new GeneradorPeliculas();
         gp2.establecerLlave(api2);
         gp2.establecerUrl("http://api.movie?api=");
-        System.out.println(gp2.obtenerUrl());
+        System.out.println(gp2.obtenerUrl()); 
+        
+         System.out.println("---------------------------");
+        
+        APIDisney api3 = new APIDisney();
+        api3.establecerApiKey("123455");
+        
+        GeneradorPeliculas gp3 = new GeneradorPeliculas();
+        gp3.establecerLlave(api3);
+        gp3.establecerUrl("http://api.movie?api=");
+        System.out.println(gp3.obtenerUrl());
         
         
     }
